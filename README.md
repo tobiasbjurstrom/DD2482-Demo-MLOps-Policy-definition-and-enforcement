@@ -14,7 +14,4 @@ Demo for defining, enforcing, and automatically testing policies for an AI agent
 
 ## Notes
 - Changing the wrapper is done in the python file for the interactive sessions and in the promptfooconfig-yaml file for the promptfoo testing. There are three tiers of wrappers, increasingly "unsafe".
-- 
-
-Ask questions:
-- What is the address of the restaurant? 
+- I have set up my gemini key in the repo so that it is used for the tests on the prs.
