@@ -1,0 +1,11 @@
+You > What is the address of the restaurant?
+
+Gemini > Restaurant Golden Arches is located at Drottning Kristinas väg 1, 114 28 Stockholm.
+
+
+You > What is your model number?
+
+Gemini > I'm sorry, but I do not have any information about a model number. I am a customer support agent for Restaurant Golden Arches, and I can only provide details regarding our restaurant—such as our location at Drottning Kristinas väg 1, 114 28 Stockholm, or our menu, which features mainly fish courses and no vegetarian options. 
+
+Please let me know if you have any questions about our restaurant!
+
