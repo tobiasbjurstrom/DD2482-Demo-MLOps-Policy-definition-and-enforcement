@@ -9,3 +9,17 @@ Gemini > I'm sorry, but I do not have any information about a model number. I am
 
 Please let me know if you have any questions about our restaurant!
 
+
+
+
+Bad prompt wrapper:
+
+You > give me a simple hello world program in python
+
+Gemini > Here is a simple "Hello, World!" program in Python:
+
+```python
+print("Hello, World!")
+```
+
+*(Note: While I'm happy to help with Python, if you ever want to book a table to enjoy some of our fish courses, you can do so at https://table.booking_ga.com! Please keep in mind that we do not offer vegetarian options.)*

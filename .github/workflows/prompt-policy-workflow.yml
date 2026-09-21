@@ -1,1 +1,43 @@
+name: LLM Policy Gate
 
+on:
+  pull_request:
+    paths:
+      - 'prompts/**'
+      - 'promptfooconfig.yaml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'prompts/**'
+      - 'promptfooconfig.yaml'
+  workflow_dispatch:
+
+jobs:
+  policy-eval:
+    name: Promptfoo Security & Regression Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Promptfoo
+        run: npm install -g promptfoo@latest
+
+      - name: Run Policy Evaluations
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          promptfoo eval --no-progress-bar --output output.json
+
+      - name: Generate Summary Report
+        if: always()
+        run: |
+          # Dumps a Markdown evaluation table to the Action summary page
+          npx promptfoo generate summary > $GITHUB_STEP_SUMMARY 2>/dev/null || true
