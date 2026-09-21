@@ -1,1 +1,13 @@
+name: Placeholder Pipeline
 
+on:
+  push:
+  pull_request:
+
+jobs:
+  no-op:
+    name: No Tests Configured
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip Execution
+        run: echo "No tests configured yet. Skipping."
