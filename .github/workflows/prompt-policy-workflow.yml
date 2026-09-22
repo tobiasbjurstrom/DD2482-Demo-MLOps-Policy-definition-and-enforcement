@@ -34,10 +34,4 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          promptfoo eval --no-progress-bar --output output.json
-
-      - name: Generate Summary Report
-        if: always()
-        run: |
-          # Dumps a Markdown evaluation table to the Action summary page
-          npx promptfoo generate summary > $GITHUB_STEP_SUMMARY 2>/dev/null || true
+          promptfoo eval --no-cache --no-progress-bar
