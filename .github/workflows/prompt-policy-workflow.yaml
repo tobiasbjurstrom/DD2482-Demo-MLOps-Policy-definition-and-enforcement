@@ -32,12 +32,12 @@ jobs:
         with:
           path: ~/.npm
           # Pin to a specific promptfoo version to make the cache key predictable
-          key: ${{ runner.os }}-promptfoo-${{ hashFiles('**/promptfooconfig.*') }}-0.100.0
+          key: ${{ runner.os }}-promptfoo-${{ hashFiles('**/promptfooconfig.*') }}-0.123.1
           restore-keys: |
             ${{ runner.os }}-promptfoo-
 
       - name: Install Promptfoo
-        run: npm install -g promptfoo@0.100.0
+        run: npm install -g promptfoo@0.123.1
 
       - name: Run Policy Evaluations
         env:
