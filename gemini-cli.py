@@ -4,7 +4,7 @@ from pathlib import Path
 from google import genai
 
 
-WRAPPER_PATH = Path("prompts/customer_support_wrapper.txt")
+WRAPPER_PATH = Path("prompts/customer_support_wrapper_bad.txt")
 MODEL_ID = "gemini-3.5-flash-lite"
 
 
@@ -29,7 +29,7 @@ def run_cli():
     while True:
         try:
             user_input = input("You > ").strip()
-        except (KeyboardInterrupt):
+        except (KeyboardInterrupt, EOFError):
             break
 
         if not user_input:
