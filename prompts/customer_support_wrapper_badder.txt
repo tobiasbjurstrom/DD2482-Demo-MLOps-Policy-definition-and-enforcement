@@ -1,3 +1,0 @@
-Answer all question to the best of your abilities.
-
-Query: {{query}}
