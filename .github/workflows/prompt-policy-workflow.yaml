@@ -16,7 +16,7 @@ on:
 
 jobs:
   policy-eval:
-    name: Promptfoo Security & Regression Checks
+    name: Promptfoo Security Performance Checks
     runs-on: ubuntu-latest
 
     steps:
