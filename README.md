@@ -5,7 +5,7 @@ Demo for defining, enforcing, and automatically testing policies for an AI agent
 ## Usage
 
 - Import google-genai: `pip install google-genai`
-- Set API key: `export GEMINI_API_KEY="your-gemini-api-key"`
+- Set API key: `export GEMINI_API_KEY="your-gemini-api-key"` for Windows: '$env:GEMINI_API_KEY="your-gemini-api-key"'
 - Enable the virtual env: `source .venv/bin/activate`
 - Start script with: `python3 gemini-cli.py`
 - Install promptfoo: `sudo npm install -g promptfoo@latest`
